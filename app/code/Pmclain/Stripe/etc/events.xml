@@ -25,12 +25,4 @@
   <event name="vault_payment_token_save_commit_after">
     <observer name="pmclain_stripe_vault_payment_token_save_commit_after" instance="Pmclain\Stripe\Observer\VaultTokenObserver" />
   </event>
-	<event name="simiconnector_add_payment_method">
-		<observer name="simi_simicustomize_add_stripe_payment"
-				  instance="Pmclain\Stripe\Observer\SimiAddStripePaymentMethod" />
-	</event>
-	<event name="simiconnector_change_payment_detail">
-		<observer name="simi_simicustomize_stripe_change_payment_detail"
-				  instance="Pmclain\Stripe\Observer\SimiStripeChangePaymentDetail" />
-	</event>
 </config>

@@ -40,10 +40,11 @@ class DataAssignObserver extends AbstractDataAssignObserver
         }
 
         $additionalData = new DataObject($additionalData);
+        $paymentMethod = $this->readMethodArgument($observer);
 
         $payment = $observer->getPaymentModel();
         if (!$payment instanceof InfoInterface) {
-            $payment = $this->readMethodArgument($observer)->getInfoInstance();
+            $payment = $paymentMethod->getInfoInstance();
         }
 
         if (!$payment instanceof InfoInterface) {

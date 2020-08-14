@@ -16,8 +16,6 @@
 
 namespace Pmclain\Stripe\Model\Adapter;
 
-require_once(\Magento\Framework\App\ObjectManager::getInstance()->get('\Magento\Framework\App\Filesystem\DirectoryList')->getPath(\Magento\Framework\App\Filesystem\DirectoryList::LIB_INTERNAL).'/Stripe/init.php');
-
 use Stripe\Customer;
 use Stripe\Stripe;
 use Stripe\Charge;
